@@ -14,7 +14,7 @@ const Tabla = ({listado = [], deleteFunc, seleccionarModificar,detelle}) => {
         <tbody>
             {
                 listado.map((value) => (
-                    <Fila mascota={value} key={value.id} deleteFunc={deleteFunc} seleccionarModificar={seleccionarModificar} detelle={detelle}/>
+                    <Fila mascota={value} key={value._id} deleteFunc={deleteFunc} seleccionarModificar={seleccionarModificar} detelle={detelle}/>
                 ))
             }
         </tbody>
