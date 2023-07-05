@@ -17,6 +17,8 @@ export default class SelectTipo extends Component {
             });
             this.setState({tipos});
         }
+
+        fetchApi();
     }
 
   render() {
