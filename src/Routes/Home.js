@@ -45,12 +45,12 @@ const Home = () => {
 
     }
 
-    const postFunc = async ({nombre,edad,tipo,vacunado,observacion}) => {
+    const postFunc = async ({nombre,edad,tipo,vacunado,observaciones}) => {
         setFetching(true);
         let method = "post";
         let url = "http://localhost:4000/api/mascotas";
         let value = {
-            nombre,edad,tipo,vacunado,observacion
+            nombre,edad,tipo,vacunado,observaciones
         }
         let success = true;
 
